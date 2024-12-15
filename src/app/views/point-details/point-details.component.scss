@@ -1,0 +1,46 @@
+.col-lg-3{
+    width: 25%;
+}
+.small-box{
+    background-color: aliceblue;
+    position: relative;
+    display: block;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    border-radius: 1rem;
+    
+}
+.inner{
+    padding: 10px;
+}
+h4{
+    text-align: center;
+    font-size: 18px;
+}
+p{
+    text-align: center;
+    font-size: 15px;
+    margin: 0 0 10px;
+}
+button {
+    background-color: #00aae6;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+button:active{
+    background-color: #00aae6;
+    transform: translate(0em, 0.2em);
+}
+
+@media (max-width: 992px) {
+    .col-lg-3 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-lg-3 {
+        width: 100%;
+    }
+}

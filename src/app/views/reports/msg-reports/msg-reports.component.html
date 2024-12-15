@@ -1,0 +1,47 @@
+<div class="container-xl px-4 mt-4">
+    <div class="row">
+        <div class="col-xl-15">
+            <!-- Account details card-->
+            <div class="card mb-4">
+                <div class="card-header" style="font-weight: 500;">Message Report Search</div>
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="md mb-1" style="font-weight: 500;">Start Date</label>
+                            <br />
+                            <mat-form-field>
+                                <mat-label>MM/DD/YYYY</mat-label>
+                                <input matInput [matDatepicker]="startPicker">
+                                <mat-datepicker-toggle matIconSuffix [for]="startPicker"></mat-datepicker-toggle>
+                                <mat-datepicker #startPicker></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+                        <!-- Form Group (End Date)-->
+                        <div class="mb-3">
+                            <label class="md mb-1" style="font-weight: 500;">End Date</label>
+                            <br />
+                            <mat-form-field >
+                                <mat-label>MM/DD/YYYY</mat-label>
+                                <input matInput [matDatepicker]="endPicker">
+                                <mat-datepicker-toggle matIconSuffix [for]="endPicker"></mat-datepicker-toggle>
+                                <mat-datepicker #endPicker></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+
+                        <!-- Save changes button-->
+                        <button class="btn btn-primary"type="button">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-15">
+            <!-- Account details card-->
+            <div class="card mb-4">
+                <div class="card-header" style="font-weight: 500;">Message History</div>
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
